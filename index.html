@@ -5,9 +5,9 @@
 
   <meta name="robots" content="index,follow">
 
-  <title>VS-Splat: Voxel-Selective Feed-Forward Gaussian Splatting for End-to-End 3D Object Reconstruction from Sparse-Views</title>
+  <title>VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views</title>
   <meta name="description"
-        content="VS-Splat: Voxel-Selective Feed-Forward Gaussian Splatting for End-to-End 3D Object Reconstruction from Sparse-Views">
+        content="VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views">
 
   <link rel="canonical" href="https://vs-splat.github.io/">
     
@@ -68,14 +68,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Feed-forward Gaussian splatting models have demonstrated remarkable effectiveness in reconstructing three-dimensional (3D) objects or scenes from a few two-dimensional (2D) images, even if they are unseen. 
-            As existing methods typically generate Gaussian primitives uniformly across the 3D space, most primitives are placed in non-object regions. 
-            This may hinder the representation of fine object details. 
-            This paper proposes a Voxel-Selective Gaussian Splatting model (<b>VS-Splat</b>), 
-            the first end-to-end feed-forward Gaussian splatting framework that generates many primitives only within selected voxels that are likely to belong to an object, 
-            without 3D structural supervision. 
-            To achieve this, we propose a new learnable voxel selection approach that identifies object-centric voxels only with 2D rendering supervision. 
-            Our sparse-view rendering experiments with three benchmark datasets show that proposed VS-Splat outperforms several state-of-the-art methods.
+            Feed-forward Gaussian splatting models have demonstrated remarkable effectiveness in reconstructing threedimensional (3D) objects from a few two-dimensional (2D) images, even if they are unseen. As existing methods typically predict Gaussian primitives uniformly across the 3D space, most primitives 
+            are placed in non-object regions. This may hinder the
+            representation of fine object details. This paper proposes a Voxel-
+            Selective Gaussian Splatting model (VS-Splat), a new end-to-end
+            feed-forward Gaussian splatting framework that predicts many
+            primitives only within selected voxels that are likely to belong
+            to an object, without 3D structural supervision. To achieve this,
+            we propose a new learnable voxel selection approach that identifies
+            object-centric voxels only with 2D rendering supervision.
+            Our sparse-view rendering experiments with three benchmark
+            datasets show that proposed VS-Splat outperforms several stateof-
+            the-art methods. We further demonstrate its effectiveness as a
+            backbone for an existing densification method and show that an
+            optional extension improves its robustness to inaccurate camera
+            pose estimates.
           </p>
         </div>
       </div>
