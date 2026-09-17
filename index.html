@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta name="robots" content="index,follow">
+
+  <title>VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views</title>
+  <meta name="description"
+        content="VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views">
+
+  <link rel="canonical" href="https://vs-splat.github.io/">
+    
+  <meta name="keywords" content="VS-Splat, VS Splat, vs-splat, vs splat">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="k-y-RQo4XO7SoC-tqBMCZ4H6p1XwQqKqXdK2nOQFFNk" />
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          
+          <h1 class="title is-1 publication-title">
+            VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views
+          </h1>
+          <div class="is-size-5 publication-authors" style="margin-top: 20px;">
+            <span class="author-block">Yunsu Jeong<sup>1,*</sup>,</span>
+            <span class="author-block">Hyuk Heo<sup>2,*</sup>,</span>
+            <span class="author-block">Youngsang Kwak<sup>3</sup>,</span>
+            <span class="author-block">Jaehwa Kwak<sup>3</sup>,</span>
+            <span class="author-block">Il Yong Chun<sup>4,&dagger;</sup></span>
+          </div>
+
+          <div class="is-size-6 publication-authors" style="margin-top: 10px;">
+            <span class="author-block"><sup>1</sup>Dept. of Electrical and Computer Engineering, Sungkyunkwan University (SKKU)</span><br>
+            <span class="author-block"><sup>2</sup>Dept. of Display Convergence Engineering, SKKU</span><br>
+            <span class="author-block"><sup>3</sup>AiM Future, Seoul, South Korea</span><br>
+            <span class="author-block"><sup>4</sup>Depts. of Electrical and Computer Engineering, Artificial Intelligence, Advanced Display Engineering, Semiconductor Convergence Engineering, and Display Convergence Engineering, SKKU</span>
+          </div>
+
+          <div class="is-size-7 publication-authors" style="margin-top: 8px;">
+            <span class="author-block"><sup>*</sup>Equal contribution&nbsp;&nbsp;&nbsp;<sup>&dagger;</sup>Corresponding author</span>
+          </div>
+
+          <div class="publication-links" style="margin-top: 20px;">
+            <!-- Paper (arXiv) -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2609.12343v1" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <!-- Code -->
+            <span class="link-block">
+              <a href="https://github.com/skkuhyuk/vssplat" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br/><br/>
+
+
+<section class="hero is-light is-small">
+  
+  <div class="container is-max-desktop" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Feed-forward Gaussian splatting models have demonstrated remarkable effectiveness in reconstructing threedimensional (3D) objects from a few two-dimensional (2D) images, even if they are unseen. As existing methods typically predict Gaussian primitives uniformly across the 3D space, most primitives 
+            are placed in non-object regions. This may hinder the
+            representation of fine object details. This paper proposes a Voxel-
+            Selective Gaussian Splatting model (VS-Splat), a new end-to-end
+            feed-forward Gaussian splatting framework that predicts many
+            primitives only within selected voxels that are likely to belong
+            to an object, without 3D structural supervision. To achieve this,
+            we propose a new learnable voxel selection approach that identifies
+            object-centric voxels only with 2D rendering supervision.
+            Our sparse-view rendering experiments with three benchmark
+            datasets show that proposed VS-Splat outperforms several stateof-
+            the-art methods. We further demonstrate its effectiveness as a
+            backbone for an existing densification method and show that an
+            optional extension improves its robustness to inaccurate camera
+            pose estimates.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+</section>
+
+
+<br/><br/><br/>
+
+
+<section class="hero teaser">
+    <div class="columns is-centered has-text-centered">
+  
+      <div class="container is-max-desktop">
+  
+          <div class="hero-body">
+            <h2 class="title is-3" style="margin-bottom: 0px">Video results</h2>
+            <hr/>
+            <h2 class="title is-4" style="margin-bottom: 0px">Comparisons between LaRa and the proposed VS-Splat model (GObjaverse)</h2>
+
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/comp_gobj.mp4"
+                      type="video/mp4">
+            </video>
+            
+            <hr/>
+            <h2 class="title is-4" style="margin-bottom: 0px">Comparisons between LaRa and the proposed VS-Splat model (GSO)</h2>
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+                <source src="./static/videos/comp_gso.mp4"
+                        type="video/mp4">
+            </video>
+
+            <hr/>
+            <h2 class="title is-4" style="margin-bottom: 0px">Additional results from the proposed VS-Splat model</h2>
+
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+                <source src="./static/videos/ours.mp4"
+                        type="video/mp4">
+            </video>
+
+          </div>
+      </div>
+  
+    </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+        <div class="content">
+            This page is based on source code from the <a href="https://nerfies.github.io/">Nerfies</a> project.<br>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
