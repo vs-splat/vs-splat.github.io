@@ -1,7 +1,7 @@
 # VS-Splat
 
 This repository contains the source code for the [project page](https://vs-splat.github.io) of<br>
-**VS-Splat: Voxel-Selective Feed-Forward Gaussian Splatting for End-to-End 3D Object Reconstruction from Sparse-Views**.
+**VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views**.
 
 
 # Website License
